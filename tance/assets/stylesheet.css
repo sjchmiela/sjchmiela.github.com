@@ -3,8 +3,8 @@ body {
 }
 h1 { font-family: 'Oregano'; font-weight: normal; font-size: 3em; text-align: center;}
 header, article { width: 800px; margin: 0 auto;}
-table { width: 100%;}
-tr { border-top: 1px solid black;}
+table { width: 100%; border-collapse: separate;}
+td { border-top: 1px solid black;}
 td { padding: 1em 0;}
 td:first-child { font-size: 2em;}
 td:nth-child(2) a, td:nth-child(3) a { width: 2em; height: 2em; padding: .45em;}
