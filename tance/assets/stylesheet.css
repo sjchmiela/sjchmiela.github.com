@@ -1,0 +1,29 @@
+body {
+	font-family: 'Alegreya';
+}
+h1 { font-family: 'Oregano'; font-weight: normal; font-size: 3em; text-align: center;}
+header, article { width: 800px; margin: 0 auto;}
+table { width: 100%;}
+tr { border-top: 1px solid black;}
+td { padding: 1em 0;}
+td:first-child { font-size: 2em;}
+td:nth-child(2) a, td:nth-child(3) a { width: 2em; height: 2em; padding: .45em;}
+td:nth-child(2) a, td:nth-child(3) a {
+	content: url(music.png);
+	display: block;
+	background-color: #f7f7f7;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+	background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+	background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+	background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0px 1px 8px #aaa, inset 0px 2px 3px #fff;
+}
+td:nth-child(3) a {
+	content: url(video.png);
+}
+td:nth-child(2) a:hover, td:nth-child(3) a:hover { background: #e7e7e7;}
+td:nth-child(2) a:active, td:nth-child(3) a:active { background: #e7e7e7; box-shadow: inset 0 1px 2px #aaa, inset 0 -2px 1px #e7e7e7; padding: .4em .45em .45em .5em;}
+footer p { font-size: .9em; color: #a7a7a7; text-align: center; font-style: italic;}
