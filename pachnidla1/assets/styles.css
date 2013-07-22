@@ -1,0 +1,55 @@
+body {
+	font-family: 'Alegreya';
+}
+h1, h2 { font-family: 'Oregano'; font-weight: normal; font-size: 4em; line-height: 1.3em; text-align: center;}
+h2 { font-size: 2em; line-height: 2em;}
+header, article { width: 50em; margin: 0 auto;}
+table { width: 100%; border-collapse: separate;}
+td { border-top: 1px solid black;}
+td { padding: 1em 0;}
+td:first-child { font-size: 2em; padding-right: 0.5em;}
+td:nth-child(2), td:nth-child(3) { width: 5em;}
+td:nth-child(2) a, td:nth-child(3) a { width: 2em; height: 2em; padding: .45em;}
+td:nth-child(2) a, td:nth-child(3) a {
+	content: url(music.png);
+	display: block;
+	background-color: #f7f7f7;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+	background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+	background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+	background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0.06em .5em #aaa, inset 0 .12em .21em #fff;
+}
+td:nth-child(3) a {
+	content: url(video.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	td:nth-child(2) a { content: url(music@2x.png); }
+	td:nth-child(3) a { content: url(video@2x.png);}
+}
+td:nth-child(2) a:hover, td:nth-child(3) a:hover { background: #f7f7f7;}
+td:nth-child(2) a:active, td:nth-child(3) a:active { background: #e7e7e7; box-shadow: 0 .06em .3em #aaa, inset 0 -0.12em .06em #e7e7e7;}
+p { font-size: 0.6em; line-height: 1.6em;}
+.scripture { font-style: italic;}
+footer p { font-size: .9em; color: #a7a7a7; text-align: center; font-style: italic;}
+footer a { color: #a7a7a7; text-decoration: none;}
+footer a:hover { color: #a7a7a7; text-decoration: underline;}
+@media only screen and (max-width: 50em) {
+	header, article { width: 40em;}
+}
+@media only screen and (max-width: 40em) {
+	header, article { width: 30em;}
+}
+@media only screen and (max-width: 30em) {
+	header, article { width: 25em;}
+	h1 { font-size: 2.5em;}
+	td:nth-child(1) { font-size: 1.5em;}
+	td:nth-child(2), td:nth-child(3) { width: 4em;}
+}
+@media only screen and (max-width: 25em) {
+	header, article { width: 15em;}
+	td:nth-child(2), td:nth-child(3) { width: 3.5em;}
+}
